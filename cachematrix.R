@@ -1,7 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCacheMatrix function takes a matrix as an argument and creates functions set, get,
+## setinvmatrix and getinvmatrix for that matrix variable and return list of funtions
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -20,7 +21,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve take an argument which is the return value of makeCacheMatrix function and computes inverse
+## of the given matrix and return the inverse of the matrix
 
 cacheSolve <- function(x, ...) {
   m <- x$getinvmatrix()
